@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Easy Math for Elementary Students</string>
+    <string name="start_game">시작하기</string>
+    <string name="addButtonLv1">+ 더하기 초급</string>
+    <string name="addButtonLv2">+ 더하기 중급</string>
+    <string name="minusButtonLv1">- 빼기 초급</string>
+    <string name="minusButtonLv2">- 빼기 중급</string>
+    <string name="gopButtonLv1">X 곱하기 초급</string>
+    <string name="tv_bottom">시작을 터치하세요</string>
+</resources>

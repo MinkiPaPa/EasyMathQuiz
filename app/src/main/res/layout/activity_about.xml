@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imageicon"
+    android:soundEffectsEnabled="true"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="381dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="350dp"
+        android:background="#80FFFFFF"
+        android:text="\n 안녕하세요. MinkiPaPa 입니다.\n 2022년 올해 초등학교 2학년이 된 제 아들 민기가 너무너무 공부가 재미없다고 해서 어떻게 하면 쉽게 공부에 흥미를 줄까하는 생각에 간단히 스피드 퀴즈 앱을 만들게 되었습니다.\n 개인 프로젝트이기 때문에 많이 부족하고 디자인도 엉성하지만 사용하시는 모든 어린이 여러분들이 재미있게 이 앱으로 조금이나마 공부에 흥미를 가질 수 있기를 바랍니다.\n 마지막으로 김민기! 아빠가 너무 너무 사랑해!"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <ImageButton
+        android:id="@+id/back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="336dp"
+        android:layout_marginLeft="336dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="264dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
