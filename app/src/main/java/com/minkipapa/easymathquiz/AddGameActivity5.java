@@ -1,5 +1,7 @@
 package com.minkipapa.easymathquiz;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -157,4 +159,11 @@ public class AddGameActivity5 extends AppCompatActivity {
         tv_bottom.setText(g.getNumberCorrect() + "/" + (g.getTotalQuestions()-1));
 
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(AddGameActivity5.this, SubActivity.class);
+        startActivity(intent);
+    }
+
 }
