@@ -17,7 +17,7 @@ public class Game3 {
         numberIncorrect = 0;
         totalQuestions = 0;
         score = 0;
-        currentQuestion = new AddQuestion3(20);
+        currentQuestion = new AddQuestion3(10);
         questions = new ArrayList<AddQuestion3>();
     }
 
@@ -37,7 +37,7 @@ public class Game3 {
             numberIncorrect++;
             isCorrect=false;
         }
-        score = numberCorrect * 10 - numberIncorrect * 30;
+        score = numberCorrect * 10 - numberIncorrect * 20;
         return isCorrect;
     }
 

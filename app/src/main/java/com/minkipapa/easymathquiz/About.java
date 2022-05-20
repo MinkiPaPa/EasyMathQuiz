@@ -5,13 +5,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class About extends AppCompatActivity {
 
-    private ImageButton back_home;
+    private Button back_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +23,9 @@ public class About extends AppCompatActivity {
         back_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent13 = new Intent(About.this, SubActivity.class);
-                startActivity(intent13);
+                finish();
+//                Intent intent13 = new Intent(About.this, SubActivity.class);
+//                startActivity(intent13);
             }
         });
     }
@@ -49,8 +51,9 @@ public class About extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(About.this, SubActivity.class);
-        startActivity(intent);
+        finish();
+//        Intent intent = new Intent(About.this, SubActivity.class);
+//        startActivity(intent);
     }
 
 }

@@ -3,26 +3,26 @@ package com.minkipapa.easymathquiz;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Game2 {
+public class Game6 {
 
-    private List<AddQuestion2> questions;
+    private List<AddQuestion6> questions;
     private int numberCorrect;
     private int numberIncorrect;
     private int totalQuestions;
     private int score;
-    private AddQuestion2 currentQuestion;
+    private AddQuestion6 currentQuestion;
 
-    public Game2() {
+    public Game6() {
         numberCorrect = 0;
         numberIncorrect = 0;
         totalQuestions = 0;
         score = 0;
-        currentQuestion = new AddQuestion2(10);
-        questions = new ArrayList<AddQuestion2>();
+        currentQuestion = new AddQuestion6(10);
+        questions = new ArrayList<AddQuestion6>();
     }
 
     public void makeNewQuestion() {
-        currentQuestion = new AddQuestion2(totalQuestions * 2 + 5);
+        currentQuestion = new AddQuestion6(totalQuestions * 2 + 5);
         totalQuestions++;
         questions.add(currentQuestion);
 
@@ -41,11 +41,11 @@ public class Game2 {
         return isCorrect;
     }
 
-    public List<AddQuestion2> getQuestions() {
+    public List<AddQuestion6> getQuestions() {
         return questions;
     }
 
-    public void setQuestions(List<AddQuestion2> questions) {
+    public void setQuestions(List<AddQuestion6> questions) {
         this.questions = questions;
     }
 
@@ -81,11 +81,11 @@ public class Game2 {
         this.score = score;
     }
 
-    public AddQuestion2 getCurrentQuestion() {
+    public AddQuestion6 getCurrentQuestion() {
         return currentQuestion;
     }
 
-    public void setCurrentQuestion(AddQuestion2 currentQuestion) {
+    public void setCurrentQuestion(AddQuestion6 currentQuestion) {
         this.currentQuestion = currentQuestion;
     }
 

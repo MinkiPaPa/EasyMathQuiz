@@ -26,6 +26,11 @@
         <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
 
         <activity
+            android:name=".AddGameActivity6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
             android:name=".AddGameActivity5"
             android:exported="false"
             android:screenOrientation="portrait" />

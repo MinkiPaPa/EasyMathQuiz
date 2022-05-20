@@ -1,3 +1,5 @@
+// 뺄셈 응용 퀴즈
+
 package com.minkipapa.easymathquiz;
 
 import java.util.Random;
@@ -22,10 +24,14 @@ public class AddQuestion4 {
         this.upperLimit = upperLimit;
         Random randomNumberMaker = new Random();
 
-        this.firstNumber = randomNumberMaker.nextInt(upperLimit+150);
-        this.secondNumber = randomNumberMaker.nextInt(upperLimit+150);
-        this.answer = this.firstNumber - this.secondNumber;
-        this.questionPhrase = firstNumber + " - " + secondNumber + " = ";
+        int max_num_value = 50;
+        int min_num_value = 20;
+
+        this.firstNumber = randomNumberMaker.nextInt(max_num_value - min_num_value + 1) + min_num_value;
+        this.secondNumber = randomNumberMaker.nextInt(upperLimit+min_num_value);
+
+        this.answer = this.secondNumber;
+        this.questionPhrase = firstNumber + " - " + "???" + " = " + (firstNumber-secondNumber);
 
         this.answerPosition = randomNumberMaker.nextInt(4);
         this.answerArray = new int[] {0,1,2,3};

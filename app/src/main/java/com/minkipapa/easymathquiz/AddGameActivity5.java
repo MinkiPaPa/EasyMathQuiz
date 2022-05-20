@@ -1,11 +1,10 @@
 package com.minkipapa.easymathquiz;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -27,13 +26,13 @@ public class AddGameActivity5 extends AppCompatActivity {
 
     Game5 g = new Game5();
 
-    int secondsRemaining = 30;
-    CountDownTimer timer = new CountDownTimer(30000, 1000) {
+    int secondsRemaining = 60;
+    CountDownTimer timer = new CountDownTimer(60000, 1000) {
         @Override
         public void onTick(long millisUntilFinished) {
             secondsRemaining--;
             tv_timer.setText(Integer.toString(secondsRemaining) + " 초");
-            prog_timer.setProgress(30 - secondsRemaining);
+            prog_timer.setProgress(60 - secondsRemaining);
         }
 
         @Override
@@ -45,7 +44,7 @@ public class AddGameActivity5 extends AppCompatActivity {
 
             tv_bottom.setText("시간이 종료되었습니다!  " + g.getNumberCorrect() + "/" + (g.getTotalQuestions()-1));
 
-            final Handler handler = new Handler();
+            final Handler handler = new Handler(Looper.getMainLooper());
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -107,7 +106,7 @@ public class AddGameActivity5 extends AppCompatActivity {
             btn_answer2.setVisibility(View.VISIBLE);
             btn_answer3.setVisibility(View.VISIBLE);
 
-            secondsRemaining = 30;
+            secondsRemaining = 60;
             tv_score.setText("0 점");
             g = new Game5();
 
@@ -162,8 +161,9 @@ public class AddGameActivity5 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(AddGameActivity5.this, SubActivity.class);
-        startActivity(intent);
+        finish();
+//        Intent intent = new Intent(AddGameActivity5.this, SubActivity.class);
+//        startActivity(intent);
     }
 
 }

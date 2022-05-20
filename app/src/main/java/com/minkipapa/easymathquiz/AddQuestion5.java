@@ -1,3 +1,5 @@
+// 곱셈 기본 퀴즈
+
 package com.minkipapa.easymathquiz;
 
 import java.util.Random;
@@ -22,7 +24,7 @@ public class AddQuestion5 {
         // this.upperLimit = upperLimit;
 
         int max_num_value = 9;
-        int min_num_value = 1;
+        int min_num_value = 2;
         Random randomNumberMaker = new Random();
 
         this.firstNumber = randomNumberMaker.nextInt(max_num_value - min_num_value + 1) + min_num_value;

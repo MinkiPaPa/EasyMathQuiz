@@ -1,6 +1,6 @@
 package com.minkipapa.easymathquiz;
 
-import android.media.MediaPlayer;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -18,13 +18,13 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
-public class AddGameActivity1<val> extends AppCompatActivity {
+public class AddGameActivity6 extends AppCompatActivity {
 
     Button btn_start, btn_answer0, btn_answer1, btn_answer2, btn_answer3, btn_back;
     TextView tv_score, tv_question, tv_timer, tv_bottom;
     ProgressBar prog_timer;
 
-    Game1 g = new Game1();
+    Game6 g = new Game6();
 
     int secondsRemaining = 60;
     CountDownTimer timer = new CountDownTimer(60000, 1000) {
@@ -55,9 +55,8 @@ public class AddGameActivity1<val> extends AppCompatActivity {
 
                     btn_back.setVisibility(View.VISIBLE);
                     btn_back.setOnClickListener(view -> {
-                        finish();
-//                        Intent intent07 = new Intent(AddGameActivity1.this , SubActivity.class);
-//                        startActivity(intent07);
+                        Intent intent = new Intent(AddGameActivity6.this , SubActivity.class);
+                        startActivity(intent);
                     });
                 }
             } , 4000);
@@ -68,7 +67,7 @@ public class AddGameActivity1<val> extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_game1);
+        setContentView(R.layout.activity_add_game5);
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -109,7 +108,7 @@ public class AddGameActivity1<val> extends AppCompatActivity {
 
             secondsRemaining = 60;
             tv_score.setText("0 점");
-            g = new Game1();
+            g = new Game6();
 
             nextTurn();
             timer.start();
@@ -163,7 +162,7 @@ public class AddGameActivity1<val> extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
-//        Intent intent = new Intent(AddGameActivity1.this, SubActivity.class);
+//        Intent intent = new Intent(AddGameActivity6.this, SubActivity.class);
 //        startActivity(intent);
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddGameActivity1">
+    tools:context=".AddGameActivity6">
 
     <TextView
         android:id="@+id/tv_timer"
@@ -190,8 +190,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_bottom" />
-
-    <!-- MinkiPapa AdMob Unit ID: ca-app-pub-5547958980058224/9999289074 -->
-    <!-- Sample AdMob Unit ID: ca-app-pub-3940256099942544/6300978111 -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

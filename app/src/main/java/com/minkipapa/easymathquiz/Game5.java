@@ -37,7 +37,7 @@ public class Game5 {
             numberIncorrect++;
             isCorrect=false;
         }
-        score = numberCorrect * 10 - numberIncorrect * 30;
+        score = numberCorrect * 10 - numberIncorrect * 20;
         return isCorrect;
     }
 
