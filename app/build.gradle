@@ -17,8 +17,8 @@ android {
         applicationId "com.minkipapa.easymathquiz"
         minSdk 23
         targetSdk 32
-        versionCode 3
-        versionName "1.1"
+        versionCode 4
+        versionName "1.1b"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
