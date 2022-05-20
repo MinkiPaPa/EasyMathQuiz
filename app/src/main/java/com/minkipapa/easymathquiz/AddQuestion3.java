@@ -49,7 +49,6 @@ public class AddQuestion3 {
         this.answerArray = suffleArray(this.answerArray);
 
         answerArray[answerPosition] = answer;
-
     }
 
     private int [] suffleArray(int[] array) {

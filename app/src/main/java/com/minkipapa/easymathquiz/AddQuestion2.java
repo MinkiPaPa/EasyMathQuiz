@@ -16,7 +16,7 @@ public class AddQuestion2 {
     private int answerPosition;
     // Maximum number value of first number or second number
     private  int upperLimit;
-    // String output of the question. e.g " 110 + 84 = "
+    // String output of the question. e.g " 5 + ? = 10 "
     private String questionPhrase;
 
     // Generate a new random question
@@ -29,8 +29,6 @@ public class AddQuestion2 {
 
         this.firstNumber = randomNumberMaker.nextInt(max_num_value - min_num_value + 1) + min_num_value;
         this.secondNumber = randomNumberMaker.nextInt(max_num_value - min_num_value + 1) + min_num_value;
-//        this.firstNumber = randomNumberMaker.nextInt(upperLimit+50);
-//        this.secondNumber = randomNumberMaker.nextInt(upperLimit+10);
 
         this.answer = this.secondNumber;
         this.questionPhrase = firstNumber + " + " + "???" + " = " + (firstNumber+secondNumber);

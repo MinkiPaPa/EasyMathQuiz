@@ -93,7 +93,4 @@ public class SubActivity extends AppCompatActivity {
         });
         builder.show();
     }
-
-    private class val {
-    }
 }

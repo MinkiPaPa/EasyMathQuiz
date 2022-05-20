@@ -1,6 +1,5 @@
 package com.minkipapa.easymathquiz;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -56,8 +55,6 @@ public class AddGameActivity2 extends AppCompatActivity {
                     btn_back.setVisibility(View.VISIBLE);
                     btn_back.setOnClickListener(view -> {
                         finish();
-//                        Intent intent08 = new Intent(AddGameActivity2.this , SubActivity.class);
-//                        startActivity(intent08);
                     });
                 }
             } , 4000);
@@ -162,8 +159,5 @@ public class AddGameActivity2 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
-//        Intent intent = new Intent(AddGameActivity2.this, SubActivity.class);
-//        startActivity(intent);
     }
-
 }

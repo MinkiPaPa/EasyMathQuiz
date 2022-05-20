@@ -60,7 +60,6 @@ public class AddGameActivity4 extends AppCompatActivity {
                     });
                 }
             } , 4000);
-
         }
     };
 
@@ -125,8 +124,6 @@ public class AddGameActivity4 extends AppCompatActivity {
                 g.checkAnswer(answerSelected);
                 tv_score.setText(Integer.toString(g.getScore()) + " 점");
                 nextTurn();
-
-
             }
         };
 
@@ -162,8 +159,5 @@ public class AddGameActivity4 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
-//        Intent intent = new Intent(AddGameActivity4.this, SubActivity.class);
-//        startActivity(intent);
     }
-
 }

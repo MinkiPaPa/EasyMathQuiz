@@ -16,7 +16,7 @@ public class AddQuestion4 {
     private int answerPosition;
     // Maximum number value of first number or second number
     private  int upperLimit;
-    // String output of the question. e.g " 110 + 84 = "
+    // String output of the question. e.g " 10 - ? = 4 "
     private String questionPhrase;
 
     // Generate a new random question
