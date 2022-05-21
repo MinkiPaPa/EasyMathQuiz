@@ -21,10 +21,10 @@ public class AddQuestion6 {
 
     // Generate a new random question
     public AddQuestion6(int upperLimit) {
-        // this.upperLimit = upperLimit;
+        this.upperLimit = upperLimit;
 
         int max_num_value = 9;
-        int min_num_value = 1;
+        int min_num_value = 2;
         Random randomNumberMaker = new Random();
 
         this.firstNumber = randomNumberMaker.nextInt(max_num_value - min_num_value + 1) + min_num_value;
@@ -33,7 +33,7 @@ public class AddQuestion6 {
         // this.firstNumber = randomNumberMaker.nextInt(upperLimit);
         // this.secondNumber = randomNumberMaker.nextInt(upperLimit);
         this.answer = this.secondNumber;
-        this.questionPhrase = firstNumber + " - " + "???" + " = " + (firstNumber*secondNumber);
+        this.questionPhrase = firstNumber + " x " + "?" + " = " + (firstNumber*secondNumber);
 
         this.answerPosition = randomNumberMaker.nextInt(4);
         this.answerArray = new int[] {0,1,2,3};

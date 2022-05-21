@@ -31,7 +31,7 @@ public class AddQuestion1 {
         this.secondNumber = randomNumberMaker.nextInt(max_num_value - min_num_value + 1) + min_num_value;
 
         this.answer = this.firstNumber + this.secondNumber;
-        this.questionPhrase = firstNumber + " + " + secondNumber + " = ???";
+        this.questionPhrase = firstNumber + " + " + secondNumber + " = ?";
 
         this.answerPosition = randomNumberMaker.nextInt(4);
         this.answerArray = new int[] {0,1,2,3};

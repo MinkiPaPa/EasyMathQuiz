@@ -32,8 +32,9 @@ public class AddQuestion5 {
 
         // this.firstNumber = randomNumberMaker.nextInt(upperLimit);
         // this.secondNumber = randomNumberMaker.nextInt(upperLimit);
+
         this.answer = this.firstNumber * this.secondNumber;
-        this.questionPhrase = firstNumber + " x " + secondNumber + " = ";
+        this.questionPhrase = firstNumber + " x " + secondNumber + " = ?";
 
         this.answerPosition = randomNumberMaker.nextInt(4);
         this.answerArray = new int[] {0,1,2,3};

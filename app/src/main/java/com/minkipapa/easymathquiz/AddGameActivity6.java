@@ -119,7 +119,7 @@ public class AddGameActivity6 extends AppCompatActivity {
                 Button buttonClicked = (Button) v;
 
                 int answerSelected = Integer.parseInt(buttonClicked.getText().toString());
-                // Toast.makeText(AddGameActivity1.this, "선택한 정답은" + answerSelected, Toast.ENGTH_SHORT).show();
+                // Toast.makeText(AddGameActivity1.this, "선택한 정답은" + answerSelected, Toast.LENGTH_SHORT).show();
 
                 g.checkAnswer(answerSelected);
                 tv_score.setText(Integer.toString(g.getScore()) + " 점");

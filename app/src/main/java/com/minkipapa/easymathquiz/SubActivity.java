@@ -59,7 +59,7 @@ public class SubActivity extends AppCompatActivity {
         });
 
         Button gop2 = findViewById(R.id.gop2);
-        gop1.setOnClickListener(v -> {
+        gop2.setOnClickListener(v -> {
             MediaPlayer mp = MediaPlayer.create(this,R.raw.sound);
             mp.start();
             Intent gop2Intent = new Intent(SubActivity.this, AddGameActivity6.class);
