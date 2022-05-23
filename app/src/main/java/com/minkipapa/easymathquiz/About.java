@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class About extends AppCompatActivity {
 
-    private Button back_home;
+    //private Button back_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
